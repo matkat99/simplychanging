@@ -1,3 +1,9 @@
 [build]
   publish = "_site"
   command = "DEBUG=* eleventy"
+
+[[redirects]]
+  from = "/posts"
+  status = 200
+  conditions = {Role = ["visitor", "admin"]}
+  force = true
