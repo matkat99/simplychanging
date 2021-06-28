@@ -14,6 +14,11 @@
 	to = "/css/*"
 	status = 200
 
+[[redirects]]
+	from = "/img/*"
+	to = "/img/*"
+	status = 200
+
 
 # if authenticated, access 404 page
 [[redirects]]
