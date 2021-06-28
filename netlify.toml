@@ -2,13 +2,31 @@
   publish = "_site"
   command = "DEBUG=* eleventy"
 
+
+  # access auth page regardless of whether you're authenticated
 [[redirects]]
-  from = "/posts/*"
-  status = 200
-  conditions = {Role = ["visitor", "admin"]}
-  force = true
+	from = "/index.html"
+	to = "/index.html"
+	status = 200
+
+# if authenticated, access 404 page
 [[redirects]]
-  from = "/posts/*"
-  to = "/"
-  force = true
-  status = 302
+	from = "/*"
+	to = "/404.html"
+	status = 404
+	conditions = {Role = ["visitor","admin"]}
+
+# if authenticated, access everything
+[[redirects]]
+	from = "/*"
+	status = 200
+	force = true
+	conditions = {Role = ["visitor", "admin"]}
+
+# for everything else, you're pushed to the auth page with 401
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 401
+	force = true
+
