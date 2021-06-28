@@ -1,21 +1,41 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "Simply Changing",
+  "tagline": "hope - empowerment - health",
+  "url": "https://simplychanging.me/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Healthy living with Essential Oils.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Healthy living with Essential Oils.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://simplychanging.me/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://simplychanging.me/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
-  }
+    "name": "Keri T",
+    "email": "lemongrasslovin@gmail.com",
+    "url": "https://simplychanging.me/contact/"
+  },
+  "topOils" : [
+    { "title": "Balance", "url": "/oils/balance/", "img": "/img/bottles/Balance_15mL_OilBlend.png"},
+    { "title": "Wild Orange", "url": "/oils/wild-orange/", "img": "/img/bottles/Wild-Orange_15mL_Oil-Single.png"},
+    { "title": "Lemon", "url": "/oils/lemon/", "img": "/img/bottles/Lemon_15mL_Oil-Single.png"},
+    { "title": "Peppermint", "url": "/oils/peppermint/", "img": "/img/bottles/Peppermint_15mL_Oil-Single.png"},
+    { "title": "Tea Tree", "url": "/oils/tea-tree/", "img": "/img/bottles/Tea-Tree_15mL.png"},
+    { "title": "Lavender", "url": "/oils/lavender/", "img": "/img/bottles/Lavender_15mL_Oil-Single.png"},
+    { "title": "Oregano", "url": "/oils/oregano/", "img": "/img/bottles/Oregano_15mL_Oil-Single.png"},
+    { "title": "Frankincense", "url": "/oils/frankincense/", "img": "/img/bottles/Frankincense_15mL_Oil-Single.png"},
+    { "title": "On Guard", "url": "/oils/on-guard/", "img": "/img/bottles/OnGuard_15mL_OilBlend.png"},
+    { "title": "DigestZen", "url": "/oils/digestzen/", "img": "/img/bottles/DigestZen_5mL_OilBlend.png"},
+    { "title": "Deep Blue", "url": "/oils/deep-blue/", "img": "/img/bottles/Deep-Blue_5mL_OilBlend.png"},
+    { "title": "Breathe", "url": "/oils/breathe/", "img": "/img/bottles/Breathe_5mL_OilBlend.png"}
+  ],
+  "allOils" : [
+    { "title": "Balance", "url": "/oils/balance/", "img": "/img/bottles/Balance_15mL_OilBlend.png"},
+    { "title": "Wild Orange", "url": "/oils/wildorange/", "img": "/img/bottles/Wild-Orange_15mL_Oil-Single.png"},
+    { "title": "Lemon", "url": "/oils/lemon/", "img": "/img/bottles/Lemon_15mL_Oil-Single.png"}
+  ]
 }

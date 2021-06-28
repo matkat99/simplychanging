@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-page
+---
+<section>
+
+<h1 class="post-title">{{ title }}</h1>
+
+{{ content | safe }}
+
+<section class="oil-grid">
+  {% for item in metadata[list] %}
+    <div class="media-box">
+      <a href="{{ item.url | url }}">
+        <img src="{{ item.img | url }}" alt="{{ item.title }}">
+
+        </a>
+      </div>
+    {% endfor %}
+  </section>
+<hr>
+
+</section>

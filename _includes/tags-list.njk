@@ -1,0 +1,12 @@
+<section class="cat-list">
+  <h2 class="fancy-title">Categories</h2>
+  <ul>
+    {% for tag in collections.tagList | filterTagList %}
+      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+      <li>
+        <a href="{{ tagUrl | url }}">
+          {{ tag }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
