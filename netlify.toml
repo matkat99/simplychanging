@@ -3,7 +3,7 @@
   command = "DEBUG=* eleventy"
 
 [[redirects]]
-  from = "/posts"
+  from = "/posts/*"
   status = 200
   conditions = {Role = ["visitor", "admin"]}
   force = true
