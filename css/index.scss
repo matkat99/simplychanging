@@ -466,4 +466,9 @@ aside {
     border: 2px solid var(--font);
   }
 }
-@import "blocks";
+@import "blocks/cat-list";
+@import "blocks/fancy-title";
+@import "blocks/media-box";
+@import "blocks/oil-grid";
+@import "blocks/page-list";
+@import "blocks/perks-list";
