@@ -19,6 +19,12 @@
 	to = "/img/*"
 	status = 200
 
+# for everything else, you're pushed to the auth page with 401
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 401
+	force = true
 
 # if authenticated, access 404 page
 [[redirects]]
@@ -34,10 +40,5 @@
 	force = true
 	conditions = {Role = ["visitor", "admin"]}
 
-# for everything else, you're pushed to the auth page with 401
-[[redirects]]
-	from = "/*"
-	to = "/index.html"
-	status = 401
-	force = true
+
 
