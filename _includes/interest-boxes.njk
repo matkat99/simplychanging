@@ -1,5 +1,5 @@
 <section class="interest-list">
-  {% for post in collections['start here'] | reverse %}
+  {% for post in collections['start here'] %}
     <div class="media-box">
       <a href="{{ post.url | url }}">
         <img src="/{{ post.data.image }}">

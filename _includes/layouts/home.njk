@@ -10,7 +10,7 @@ templateClass: tmpl-home
         } else {
           const now = Date.now();
           if (user.token.expires_at<now) {
-            console.log('expired');
+            netlifyIdentity.refresh().then((jwt) => console.log('refreshed'));
           }
         }
       });
