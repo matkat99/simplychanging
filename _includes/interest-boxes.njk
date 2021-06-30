@@ -2,7 +2,7 @@
   {% for post in collections['start here'] | reverse %}
     <div class="media-box">
       <a href="{{ post.url | url }}">
-        <img src="{{ post.data.image | url }}">
+        <img src="/{{ post.data.image }}">
           <h2>
             {% if post.data.title %}
               {{ post.data.title }}
