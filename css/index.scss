@@ -432,7 +432,7 @@ aside {
 .tmpl-page {
   @include breakpoint(small) {
     display: grid;
-    grid-template-columns: auto 320px;
+    grid-template-columns: auto 300px;
     .interest-list {
       grid-column: 1 / span 2;
     }
@@ -466,9 +466,17 @@ aside {
     border: 2px solid var(--font);
   }
 }
+
+.legal {
+  font-size: var(--s-1);
+  font-style: italic;
+}
+
 @import "blocks/cat-list";
 @import "blocks/fancy-title";
 @import "blocks/media-box";
 @import "blocks/oil-grid";
 @import "blocks/page-list";
 @import "blocks/perks-list";
+@import "blocks/pagination-controls";
+@import "blocks/recipe";

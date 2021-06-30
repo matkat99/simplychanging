@@ -1,0 +1,8 @@
+.recipe {
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  overflow: hidden;
+  > section {
+    padding: var(--s0);
+  }
+}
