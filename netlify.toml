@@ -3,6 +3,13 @@
   command = "DEBUG=* eleventy"
 
 
+# for everything else, you're pushed to the auth page with 401
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 401
+	force = true
+
   # access auth page regardless of whether you're authenticated
 [[redirects]]
 	from = "/index.html"
@@ -19,12 +26,7 @@
 	to = "/img/*"
 	status = 200
 
-# for everything else, you're pushed to the auth page with 401
-[[redirects]]
-	from = "/*"
-	to = "/index.html"
-	status = 401
-	force = true
+
 
 # if authenticated, access 404 page
 [[redirects]]

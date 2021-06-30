@@ -10,49 +10,34 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      netlifyIdentity.on('init', user => {
-        console.log('init', user);
-        if (!user) {
-          netlifyIdentity.open();
-        }
-      });
-      netlifyIdentity.on('login', user => {
-        console
-          .log('login', user)
-          netlifyIdentity
-          .refresh()
-          .then((jwt) => console.log('refreshed'));
-      });
-    </script>
   </head>
-</html></head></head><body><header>
-<div class="logo">
-  <h1 class="home">
-    <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-  </h1>
-  <p class="tagline">{{ metadata.tagline }}</p>
-</div>
-{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-<ul class="nav">
-  {%- for entry in collections.all | eleventyNavigation %}
-    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-      <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-    </li>
-  {%- endfor %}
-</ul></header><main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
-{{ content | safe }}
-<aside>{% include "tags-list.njk" %}</aside></main><footer>
-<p class="copyright-txt">© 2021 Cranemeadows. All rights reserved
-</p>
-{# <table width="100" border="0" cellpadding="2" cellspacing="0" title="Click to Verify">
-                                                                                              <tbody>
-                                                                                                <tr>
-                                                                                                  <td width="100" align="center" valign="top">
-                                                                                                    <script
-                                                                                                      type="text/javascript"
-                                                                                                      src="https://www.doterracertifiedsite.com/api/Certificates/Script?domain=simplychanging.me&amp;sealSize=Small"></script>
-                                                                                                  </td>
-                                                                                                </tr>
-                                                                                              </tbody>
-                                                                                            </table> #}</footer><!-- Current page: {{ page.url | url }} --></body></html></head></html>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="home">
+          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        </h1>
+        <p class="tagline">{{ metadata.tagline }}</p>
+      </div>{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}<ul class="nav">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </header>
+    <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>{{ content | safe }}<aside>{% include "tags-list.njk" %}</aside>
+    </main>
+    <footer>
+      <p class="copyright-txt">© 2021 Cranemeadows. All rights reserved</p>{# <table width="100" border="0" cellpadding="2" cellspacing="0" title="Click to Verify">
+                                                                                                                          <tbody>
+                                                                                                                            <tr>
+                                                                                                                              <td width="100" align="center" valign="top">
+                                                                                                                                <script
+                                                                                                                                  type="text/javascript"
+                                                                                                                                  src="https://www.doterracertifiedsite.com/api/Certificates/Script?domain=simplychanging.me&amp;sealSize=Small"></script>
+                                                                                                                              </td>
+                                                                                                                            </tr>
+                                                                                                                          </tbody>
+                                                                                                                        </table> #}</footer><!-- Current page: {{ page.url | url }} --></body>
+</html></head></html>
