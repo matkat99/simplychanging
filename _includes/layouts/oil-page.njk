@@ -7,16 +7,19 @@ pagination:
 permalink: "oils/{{ oil.title | slug }}/"
 templateClass: tmpl-page
 ---
-<section>
+<article class="oil-page">
 
 <h1 class="post-title">{{ oil.title }}</h1>
-
-<img src="{{ oil.img }}" alt="{{ oil.title }} essential oil bottle" class=" pull-right">
+<section>
+<img src="{{ oil.img }}" alt="{{ oil.title }} essential oil bottle" class=" oil-bottle">
+<div>
 {%- for p in oil.description  -%}
 <p>{{ p | safe }}</p>
 
 {%- endfor %}
-<h2>Usage</h2>
+</div>
+</section>
+<h2 class="clear">Usage</h2>
 <ul>
   {%- for u in oil.usage  -%}
 <li>{%- if u.href -%}<a href="{{ u.href }}">{{ u.link }}</a>{%- else -%}{{ u | safe }}{%- endif -%}</li>
@@ -53,4 +56,4 @@ templateClass: tmpl-page
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
-</section>
+</article>

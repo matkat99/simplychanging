@@ -21,6 +21,28 @@ body {
   line-height: 23px;
 }
 
+body {
+  @include breakpoint(small) {
+    max-width: 1080px;
+    margin: var(--s1) auto;
+  }
+}
+aside {
+  margin: var(--s1) 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headline-normal;
+  font-weight: normal;
+}
+h2 {
+  font-size: var(--s2);
+}
+
 .post-title {
   font-family: $headline-normal;
   // text-transform: uppercase;
@@ -418,15 +440,6 @@ a[href].direct-link:focus:visited,
   }
 }
 
-body {
-  @include breakpoint(small) {
-    max-width: 1080px;
-    margin: auto;
-  }
-}
-aside {
-  margin: var(--s1) 0;
-}
 .tmpl-home,
 .tmpl-post,
 .tmpl-page {
@@ -446,6 +459,29 @@ aside {
     float: right;
     max-width: 17em;
   }
+}
+.pull-left {
+  display: block;
+  margin: auto;
+  @include breakpoint(small) {
+    float: left;
+    max-width: 17em;
+    margin-right: var(--s1);
+    margin-bottom: var(--s1);
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.rotate-90 {
+  transform: rotate(90deg) translate(-210px, -110px);
+  transform-origin: 0 100%;
+}
+
+.oil-bottle {
+  max-width: 5em;
 }
 
 .center-text {
@@ -480,3 +516,4 @@ aside {
 @import "blocks/perks-list";
 @import "blocks/pagination-controls";
 @import "blocks/recipe";
+@import "blocks/oil-page";
