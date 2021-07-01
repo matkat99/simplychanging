@@ -6,13 +6,17 @@
     "Balance, doTERRA’s grounding blend, is a blend of Spruce, Ho Wood, Frankincense, Blue Tansy and Blue Chamomile with Fractioned Coconut Oil. The warm, woody aroma of Balance, creates a sense of calm and wellbeing."],
     "usage": [
       "Begin your day by putting Balance on the bottom of your feet to promote feelings of calmness and tranquility throughout the day.",
-      "Balance is a great oil blend to use during an AromaTouch® Hand Massage (see video below)",
-      "Apply doTERRA Balance to your wrists or neck to help ease anxious feelings.",
-      "Diffuse in your car during road trips to create a calming, soothing environment",
-      "Diffuse in the morning while kids are getting ready for school to help everyone stay calm and focused"
+      "Balance is a great oil blend to use during an AromaTouch® Hand Massage (see video below).",
+      "Apply Balance to your wrists or neck to help ease anxious feelings.",
+      "Diffuse in your car during road trips to create a calming, soothing environment.",
+      "Diffuse in the morning while kids are getting ready for school to help everyone stay calm and focused.",
+      "If you have occasional feelings of anxiousness, apply Balance to your wrists and neck.",
+      "When feeling overwhelmed, diffuser Balance or apply topically.",
+      "After a long day at work, add a few drops of Balance along with Epsom salt to your bath water for a relaxing experience.",
+      "Put a drop behind your ears or on the back of your neck when flying to calm anxious feelings."
     ],
     "images": [
-      {"src": "/img/oil-info/balance-8-facts.jpeg", "alt": "8 facts about Balance"}
+      
     ],
     "videos": [
       {"src": "//www.youtube.com/embed/Vez2mCuA89A?wmode=transparent&modestbranding=1&autohide=1&showinfo=0&rel=0"}
@@ -21,13 +25,24 @@
   { "title": "Wild Orange",
     "url": "/oils/wild-orange/",
     "img": "/img/bottles/Wild-Orange_15mL_Oil-Single.png",
-    "description": ["🍊dōTERRA Wild Orange has the most wonderful uplifting aroma that inspires feelings of happiness, energy, and abundance. dōTERRA Wild Orange essential oil is cold pressed from fresh fruit peels of the sweet orange tree. doTERRA sources oranges through Co-Impact Sourcing® in the Dominican Republic and Brazil, where ideal climate and growing conditions contribute to the best possible orange citrus oil in the world."],
+    "description": ["🍊dōTERRA Wild Orange has the most wonderful uplifting aroma that inspires feelings of happiness, energy, and abundance. dōTERRA Wild Orange essential oil is cold pressed from fresh fruit peels of the sweet orange tree. doTERRA sources oranges through Co-Impact Sourcing® in the Dominican Republic and Brazil, where ideal climate and growing conditions contribute to the best possible orange citrus oil in the world.",
+    "<strong>Avoid sunlight and UV rays for at least 12 hours after applying product.</strong>"],
     "usage":[
-            {"href": "https://www.doterra.com/US/en/blog/spotlight-wild-orange-oil", "link": "Ideas for Wild Orange Use"}],
+      "Add a drop to water or smoothie for a burst of flavor and to promote overall health.",
+      "Use in an all-purpose spray to cleanse and purify countertops, tables and other surfaces.",
+      "Diffuse to uplift mood and energy levels and to freshen the air.",
+      "During colder temperatures, take 1-2 drops of Wild Orange in a capsule to support a healthy immune system.*",
+      "Place a few drops on your air filter to improve your home's scent.",
+      "Before a stress filled day, diffuse for an energizing and revitalizing aroma.",
+      "When you lack energy in the afternoon, diffuse 3 drops Wild Orange with 3 drops Peppermint to increase alertness and lift mood.",
+      "If you don't have a diffuser, apply a drop of Wild Orange and a drop of Peppermint in your hands and breathe in deeply then rub into shoulders to help increase alertness and lift mood.",
+      "Slice an apple and put in a bowl filled with water. Add 2 drops Wild Orange to the water and swish around. Let the apples soak for 3 minutes. Dump out the water and enjoy your orange flavored apples.",
+            {"href": "https://www.doterra.com/US/en/blog/spotlight-wild-orange-oil", "link": "More Ideas for Wild Orange Use"}],
     "images": [
-      {"src": "/img/oil-info/orange-11-ways.jpg", "alt": "11 ways to use Wild orange essential oil"},
+      
       {"src": "/img/oil-info/orange-blends.jpeg", "alt": "Wild orange diffuser blends"}],
-    "videos":[]
+    "videos":[],
+    "disclaimer":true
   },
   { "title": "Lemon",
     "url": "/oils/lemon/",
