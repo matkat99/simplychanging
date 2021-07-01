@@ -1,0 +1,10 @@
+.oil-page {
+  h1 {
+    // font-size: var(--s3);
+  }
+  > section {
+    display: flex;
+    align-items: center;
+    gap: var(--s1);
+  }
+}
