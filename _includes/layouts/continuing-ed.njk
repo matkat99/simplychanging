@@ -5,5 +5,6 @@ templateClass: tmpl-home
 <section>
 <h1 class="post-title">{{ title }}</h1>
 {{ content | safe }}
+{% set list = collections['continuing ed'] %}
 {% include "postslist-simple.njk" %}
 </section>
