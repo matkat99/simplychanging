@@ -16,7 +16,7 @@ As you dive into using your essential oils, we want to make sure that you know h
 When using an essential oil, **make sure to read the label** to find out how the oil can be used: topically, aromatically and/or internally. **Not all of doTERRA’s oils can be taken internally.** The oils that you can take internally have supplement facts on the bottle. Watch the video and check out the infographics to learn tips on how to use your oils safely and effectively. To learn about how to use essential oils aromatically, check out our [Diffusing Essential Oils](/pages/diffusing/) page. Have questions? We are here to help you have a great essential experience. Head on over to our Facebook page or send us a text or email 🙂
 
 <figure class="video-container">
-<iframe loading="lazy" src="//www.youtube.com/embed/vEzQy1LuezU?wmode=transparent&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;rel=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<iframe loading="lazy" src="https://www.youtube.com/embed/vEzQy1LuezU?wmode=transparent&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;rel=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </figure>
 
 ![Oil tips](/img/oil-usage-tips.jpeg "Oil tips")
