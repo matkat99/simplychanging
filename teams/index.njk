@@ -1,21 +1,16 @@
 ---
-layout: layouts/home.njk
-
+layout: layouts/team.njk
 eleventyNavigation:
-  key: Home
-  order: 1
+  key: Teams
+  order: 4
 ---
 
-
-
-{% include "hero.njk" %}
-
 {% set maxPosts = collections.posts.length | min(3) %}
+{# <h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1> #}
 
 {% set postslist = collections.posts | head(-5) %}
 {% set postslistCounter = collections.posts | length %}
-{% include "categories-large.njk" %}
-
+{% include "interest-boxes.njk" %}
 <section>
 {% include "postslist.njk" %}
 

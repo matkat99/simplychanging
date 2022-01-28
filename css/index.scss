@@ -437,10 +437,13 @@ a[href].direct-link:focus:visited,
   @include breakpoint(small) {
     display: flex;
     justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
   }
 }
 
-.tmpl-home,
+.tmpl-team,
 .tmpl-post,
 .tmpl-page {
   @include breakpoint(small) {
@@ -517,3 +520,4 @@ a[href].direct-link:focus:visited,
 @import "blocks/pagination-controls";
 @import "blocks/recipe";
 @import "blocks/oil-page";
+@import "blocks/hero";

@@ -1,0 +1,16 @@
+<section class="interest-list">
+  {% for post in staticTags %}
+    <div class="media-box">
+      <a href="{{ post.url | url }}">
+        <img src="{{ post.img }}">
+          <h2>
+            {% if post.title %}
+              {{ post.title }}
+            {% else %}
+              <code>{{ post.url }}</code>
+            {% endif %}
+          </h2>
+        </a>
+      </div>
+    {% endfor %}
+  </section>

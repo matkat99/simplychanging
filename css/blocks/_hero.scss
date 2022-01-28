@@ -1,0 +1,16 @@
+.hero {
+  width: 100%;
+  background-color: lighten(#e99e03, 40%);
+  padding: var(--s1);
+  div {
+    background-color: white;
+  }
+  p {
+    padding: var(--s1);
+    font-size: var(--s1);
+  }
+  h2 {
+    font-size: var(--s3);
+    margin-right: var(--s2);
+  }
+}

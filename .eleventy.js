@@ -64,6 +64,17 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob("./membership/*.md");
   });
 
+  // eleventyConfig.addCollection("staticTags", (collection) => {
+  //   return [
+  //     "Parenting",
+  //     "Travel",
+  //     "Home",
+  //     "Wellness",
+  //     "Spiritual",
+  //     "Giving Back",
+  //   ];
+  // });
+
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
