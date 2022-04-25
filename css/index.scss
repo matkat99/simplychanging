@@ -208,7 +208,7 @@ code {
   line-height: var(--s2);
   font-family: $headline-normal;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: space-around;
   align-items: center;
   @include breakpoint(small) {
@@ -381,11 +381,13 @@ a[href].direct-link:focus:visited,
   flex-direction: column;
   position: relative;
   align-items: center;
+
   h1 {
     font-family: $headline-script-font;
     font-weight: 400;
     font-size: 50px;
     line-height: 45px;
+    text-align: center;
   }
   a:link,
   a:visited {

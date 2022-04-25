@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("filterTagList", (tags) => {
     // should match the list in tags.njk
     return (tags || []).filter(
-      (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+      (tag) => ["all", "nav", "post", "posts", "teamPosts"].indexOf(tag) === -1
     );
   });
 

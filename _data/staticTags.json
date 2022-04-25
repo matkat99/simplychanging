@@ -1,8 +1,8 @@
 [
-  {"title": "Parenting", "img": "https://via.placeholder.com/150x60", "url":"/tags/parenting"},
-  {"title":"Travel", "img": "https://via.placeholder.com/150x60", "url":"/tags/travel"},
-  {"title":"Home", "img": "https://via.placeholder.com/150x60", "url":"/tags/home"},
-  {"title":"Wellness", "img": "https://via.placeholder.com/150x60", "url":"/tags/wellness"},
-  {"title":"Spiritual","img": "https://via.placeholder.com/150x60", "url":"/tags/spiritual"},
-  {"title":"Giving Back","img": "https://via.placeholder.com/150x60", "url":"/tags/giving"}
+  {"title": "Parenting", "img": "../img/parenting-600.jpeg", "url":"/tags/parenting"},
+  {"title":"Travel", "img": "../img/travel-600.jpeg", "url":"/tags/travel"},
+  {"title":"Home", "img": "../img/home-600.jpeg", "url":"/tags/home"},
+  {"title":"Wellness", "img": "../img/wellness-600.jpeg", "url":"/tags/wellness"},
+  {"title":"Spiritual","img": "../img/spiritual-600.jpeg", "url":"/tags/spiritual"},
+  {"title":"Giving Back","img": "../img/giving-600.jpeg", "url":"/tags/giving"}
 ]
