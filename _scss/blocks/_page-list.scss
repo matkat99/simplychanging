@@ -1,0 +1,22 @@
+.page-list {
+  > section {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(small) {
+      flex-direction: row;
+      margin-bottom: var(--s1);
+    }
+    h2 {
+      font-family: $headline-normal;
+      font-weight: normal;
+    }
+    > img {
+      max-width: 100%;
+      @include breakpoint(small) {
+        max-width: 30%;
+        margin-right: var(--s1);
+      }
+    }
+  }
+}

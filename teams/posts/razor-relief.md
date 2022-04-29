@@ -12,4 +12,4 @@ Have you ever experienced razor burn?
 
 Then you might just love this razor relief serum. It will help promote clear, smooth skin. This is a great blend of oils to use on any sort of skin irritation: bug bites, sun burns, rashes, etc.
 
-![img/razor-relief-recipe.jpg](../../img/razor-relief-recipe.jpg "razor relief recipe")
+![img/razor-relief-recipe.jpg](/img/razor-relief-recipe.jpg "razor relief recipe")
