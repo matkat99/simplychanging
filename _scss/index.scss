@@ -55,6 +55,8 @@ h2 {
 }
 img {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 p:last-child {
   margin-bottom: 0;
@@ -262,6 +264,7 @@ code {
 
   img {
     max-width: 420px;
+    display: block;
     margin: 0 auto;
   }
 }
@@ -461,6 +464,7 @@ a[href].direct-link:focus:visited,
 .pull-right {
   display: block;
   margin: auto;
+  padding: 1em;
   @include breakpoint(small) {
     float: right;
     max-width: 17em;
@@ -469,6 +473,7 @@ a[href].direct-link:focus:visited,
 .pull-left {
   display: block;
   margin: auto;
+  padding: 1em;
   @include breakpoint(small) {
     float: left;
     max-width: 17em;
@@ -476,6 +481,15 @@ a[href].direct-link:focus:visited,
     margin-bottom: var(--s1);
   }
 }
+.no-format-img {
+  display: auto;
+  margin: 0;
+}
+// .center-img {
+//   display: block;
+//   margin: auto;
+//   padding: 1em;
+// }
 
 .clear {
   clear: both;
