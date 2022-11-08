@@ -24,6 +24,7 @@
             <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
+          <li><div data-netlify-identity-button class="nav-item"></div></li>
       </ul>
     </header>
     <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>{{ content | safe }}<aside>{% include "tags-list.njk" %}</aside>
