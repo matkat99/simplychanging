@@ -27,6 +27,7 @@ body {
     margin: var(--s1) auto;
   }
 }
+
 aside {
   margin: var(--s1) 0;
 }
@@ -36,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $headline-normal;
+  font-family: $headline-script-font;
   font-weight: normal;
 }
 h2 {
@@ -389,7 +390,7 @@ a[href].direct-link:focus:visited,
   h1 {
     font-family: $headline-script-font;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 45px;
     text-align: center;
   }
@@ -422,6 +423,14 @@ a[href].direct-link:focus:visited,
   left: -40px;
   right: auto;
 }
+
+.purpose {
+  font-size: var(--s1);
+  max-width: 750px;
+  margin: 1em auto;
+  text-align: center;
+}
+
 .video-container {
   position: relative;
   overflow: hidden;
@@ -446,6 +455,18 @@ a[href].direct-link:focus:visited,
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.tmpl-home {
+
+  @include breakpoint(small) {
+    display:grid;
+  grid-template-columns: auto 250px;
+  .interest-list {
+    grid-column: 1 / 3;
+  }
   }
 }
 

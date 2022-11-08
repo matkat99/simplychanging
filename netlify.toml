@@ -39,8 +39,8 @@
 
 # for everything else, you're pushed to the auth page with 401
 [[redirects]]
-	from = "/teams/*"
-	to = "/teams/index.html"
+	from = "/*"
+	to = "/index.html"
 	status = 401
 	force = true
 

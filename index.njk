@@ -7,14 +7,12 @@ eleventyNavigation:
 ---
 
 
+{% set maxPosts = collections.teamPosts.length | min(3) %}
+{# <h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1> #}
 
-{% include "hero.njk" %}
-
-{% set maxPosts = collections.posts.length | min(3) %}
-
-{% set postslist = collections.posts | head(-5) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "categories-large.njk" %}
+{% set postslist = collections.teamPosts | head(-5) %}
+{% set postslistCounter = collections.teamPosts | length %}
+{% include "interest-boxes.njk" %}
 
 <section>
 {% include "postslist.njk" %}
