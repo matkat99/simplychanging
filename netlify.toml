@@ -3,41 +3,9 @@
   command = "DEBUG=* eleventy"
 
 
-
-
-
-
-[[redirects]]
-	from = "/css/*"
-	to = "/css/*"
-	status = 200
-
-[[redirects]]
-	from = "/img/*"
-	to = "/img/*"
-	status = 200
-
-
-
-# if authenticated, access 404 page
-[[redirects]]
-	from = "/*"
-	to = "/404.html"
-	status = 404
-	conditions = {Role = ["visitor","admin"]}
-
-# if authenticated, access everything
-[[redirects]]
-	from = "/*"
-	status = 200
-	force = true
-	conditions = {Role = ["visitor", "admin"]}
-
-# for everything else, you're pushed to the auth page with 401
-[[redirects]]
-	from = "/*"
-	to = "/index.html"
-	status = 401
-	force = true
-
-
+[[headers]]
+for = “/*”
+[headers.values]
+cache-control = “max-age=0, no-cache, no-store, must-revalidate”
+Basic-Auth = ‘’’
+lemon:grass
