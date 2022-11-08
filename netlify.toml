@@ -3,13 +3,6 @@
   command = "DEBUG=* eleventy"
 
 
-[[headers]]
-for = "/*"
-[headers.values]
-cache-control = "max-age=0, no-cache, no-store, must-revalidate"
-Basic-Auth = "lemon:grass"
-
-
  # access auth page regardless of whether you're authenticated
 [[redirects]]
 	from = "/index.html"

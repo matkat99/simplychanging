@@ -2,5 +2,21 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
-
+<script>
+      netlifyIdentity.on('init', user => {
+        //console.log('init', user);
+        if (!user) {
+          netlifyIdentity.open();
+        } else {
+          const now = Date.now();
+          if (user.token.expires_at<now) {
+            netlifyIdentity.refresh().then((jwt) => console.log('refreshed'));
+          }
+        }
+      });
+      netlifyIdentity.on('login', user => {
+            netlifyIdentity.close();
+            // netlifyIdentity.refresh().then((jwt) => console.log('refreshed'));
+          })
+            </script>
 {{ content | safe }}
