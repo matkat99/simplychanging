@@ -1,0 +1,14 @@
+.media-list {
+  @include breakpoint(small) {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  }
+  > * {
+    flex: 0 0 45%;
+    padding: 1em;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+  }
+}

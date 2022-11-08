@@ -44,6 +44,9 @@ h2 {
   font-size: var(--s2);
   line-height: 2ch;
 }
+h3 {
+  font-family: $headline-normal;
+}
 
 .post-title {
   font-family: $headline-normal;
@@ -89,11 +92,13 @@ a:visited {
   text-decoration: none;
 }
 .tmpl-post a:visited,
-.tmpl-page a:visited {
+.tmpl-page a:visited,
+.yellow:visited {
   color: var(--yellow);
 }
 .tmpl-post a:hover,
-.tmpl-page a:hover {
+.tmpl-page a:hover,
+.yellow:hover {
   text-decoration: underline;
 }
 main {
@@ -551,6 +556,7 @@ a[href].direct-link:focus:visited,
 
 @import "blocks/cat-list";
 @import "blocks/fancy-title";
+@import "blocks/media-list";
 @import "blocks/media-box";
 @import "blocks/oil-grid";
 @import "blocks/page-list";
