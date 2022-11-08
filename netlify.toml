@@ -5,11 +5,7 @@
 
 
 
-  # access auth page regardless of whether you're authenticated
-[[redirects]]
-	from = "/index.html"
-	to = "/index.html"
-	status = 200
+
 
 [[redirects]]
 	from = "/css/*"
