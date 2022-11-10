@@ -1,7 +1,7 @@
 ---
 title: Yarrow/Pom Active Botanical Nutritive Duo
 description: So many health benefits from this beautiful blend of Yarrow and Pomegranate!
-date: 2022-07-07
+date: 2022-04-07
 tags:
   - oil education
 layout: layouts/post.njk
