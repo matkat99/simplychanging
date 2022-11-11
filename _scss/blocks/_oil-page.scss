@@ -7,4 +7,7 @@
     align-items: center;
     gap: var(--s1);
   }
+  img + img {
+    margin-top: 2em;
+  }
 }
