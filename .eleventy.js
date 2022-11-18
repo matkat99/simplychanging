@@ -77,7 +77,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("membership", (collection) => {
-    return collection.getFilteredByGlob("./membership/*.md");
+    return collection
+      .getFilteredByGlob("./membership/*.md")
+      .sort((a, b) => a.data.number - b.data.number);
   });
 
   // eleventyConfig.addCollection("staticTags", (collection) => {
